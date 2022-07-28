@@ -28,9 +28,5 @@ public class AndroidDarkModeSupport {
             int forceDarkMode = (isNightModeEnabled ? WebSettingsCompat.FORCE_DARK_ON : WebSettingsCompat.FORCE_DARK_OFF);
             WebSettingsCompat.setForceDark(settings, forceDarkMode);
         }
-
-        if (WebViewFeature.isFeatureSupported(WebViewFeature.FORCE_DARK_STRATEGY)) {
-            WebSettingsCompat.setForceDarkStrategy(settings, WebSettingsCompat.WEB_THEME_DARKENING_ONLY);
-        }
     }
 }
